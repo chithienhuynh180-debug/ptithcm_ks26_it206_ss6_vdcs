@@ -1,18 +1,6 @@
-## 1. Báo cáo phân tích
 
-**Bài toán:** sinh viên tự giải thích một khái niệm, AI chấm theo rubric và dạy lại kiểu Feynman.
 
-**Input:** khái niệm, bài làm của sinh viên, rubric (tiêu chí + điểm, tổng 10), trình độ.
-
-**Output:** bảng điểm từng tiêu chí, tổng điểm, giải thích lại đơn giản, chỗ còn thiếu, 1 câu hỏi ngược.
-
-**Bẫy và cách xử lý:**
-- bài làm trống hoặc quá ngắn: không chấm, báo lỗi
-- thiếu rubric hoặc tổng điểm khác 10: báo lỗi, không tự bịa
-- bài lạc đề: tiêu chí đúng khái niệm cho 0 điểm
-- bài copy văn mẫu: trừ điểm tiêu chí dễ hiểu
-
-## 2. Prompt
+## Prompt
 
 ````text
 # VAI TRÒ
@@ -45,7 +33,7 @@ Mỗi tiêu chí không vượt điểm tối đa, kèm 1 lý do ngắn. Chỉ d
 1 câu hỏi để sinh viên tự nghĩ, không đưa đáp án.
 ````
 
-## 3. Kết quả chạy thử
+## Kết quả chạy thử
 
 **Lần 1 (dữ liệu bình thường)**
 
